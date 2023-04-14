@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 /*paleta de cores e fontes em um,a variavel
-
 cores:
 #BBC8F2
 #939EBF
@@ -20,4 +19,10 @@ font-family: 'Roboto', sans-serif;
   --cor3: #585F73;
   --cor4: #313540;
   --cor5: #F2F2F2;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
