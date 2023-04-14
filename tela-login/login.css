@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*paleta de cores e fontes em um,a variavel
+
+cores:
+#BBC8F2
+#939EBF
+#585F73
+#313540
+#F2F2F2
+
+fontes:
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
+
+font-family: 'Roboto', sans-serif;
+*/
+:root{
+  --cor1: #BBC8F2;
+  --cor2: #939EBF;
+  --cor3: #585F73;
+  --cor4: #313540;
+  --cor5: #F2F2F2;
+}
