@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 /*paleta de cores e fontes em um,a variavel
 cores:
 #BBC8F2
@@ -9,9 +9,8 @@ cores:
 #F2F2F2
 
 fontes:
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
-
-font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+font-family: 'Ubuntu', sans-serif;
 */
 :root{
   --cor1: #BBC8F2;
@@ -20,9 +19,46 @@ font-family: 'Roboto', sans-serif;
   --cor4: #313540;
   --cor5: #F2F2F2;
 }
-
+/*reset padrao*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+/*config padrao*/
+html,body{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--cor4);
+}
+/*usei display flex mais pode ser com position relative no main e absolute na section top e left 50%   e despopis usar transform translate -50% doss dos ladops  */
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*adpata o section para mobile first*/
+section#login{
+  background-color: var(--cor5);
+  width: 270px;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.455);
+}
+/*poe a img e adapta elapara dentro do bloco*/
+section#login > div#img{
+  background: var(--cor4) url(../img/img-login.pq.jpg);
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+   display: block;
+}
+/*se der algum bug talvez seja o display block*/
+section#login > div#form{
+  display: block;
+  padding: 15px;
 }
