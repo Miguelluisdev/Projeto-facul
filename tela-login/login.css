@@ -48,6 +48,8 @@ section#login{
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.455);
+  transition: width 0.4s height 0.4s;
+  transition-timing-function: ease;
 }
 /*poe a img e adapta elapara dentro do bloco*/
 section#login > div#img{

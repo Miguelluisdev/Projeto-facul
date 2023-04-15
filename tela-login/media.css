@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+:root{
+  --cor1: #BBC8F2;
+  --cor2: #939EBF;
+  --cor3: #585F73;
+  --cor4: #313540;
+  --cor5: #F2F2F2;
+}
+
+
+/*device breakpoins
+celular 767px
+tablet 768 até 1023px
+desktop 1024 até 1280px
+telas grandes acima de 1281px
+*/
+@media screen and (min-width: 768px) and (max-width: 992px)   {
+
+  body{
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3), var(--cor1));
+  }
+
+    section#login{
+      width: 80vw;
+    }
+
+    section#login > div#img{
+      float: left;
+      width: 40%;
+      height: 100%;
+      background-position: center center;
+    }
+
+
+    section#login > div#form{
+      float: right;
+      width: 60%;
+    }
+    div#form > h1{
+      text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+ 
+  body{
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3), var(--cor1));
+  }
+
+
+  section#login{
+    width: 950px;
+  }
+  
+  section#login > div#img{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-position: center ;
+  }
+  
+
+  section#login > div#form{
+    float: right;
+    width: 50%;
+  }
+  div#form > h1{
+    text-align: center;
+  }
+  
+}
+
+@media screen and (min-width: 1440px) {
+  body{
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3), var(--cor1));
+  }
+
+
+  section#login{
+    width: 950px;
+  }
+  
+  section#login > div#img{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-position: center ;
+  }
+  
+
+  section#login > div#form{
+    float: right;
+    width: 50%;
+  }
+  div#form > h1{
+    text-align: center;
+  }
+}
