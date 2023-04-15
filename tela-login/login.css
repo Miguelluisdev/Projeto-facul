@@ -43,7 +43,7 @@ html,body{
 /*adpata o section para mobile first*/
 section#login{
   background-color: var(--cor5);
-  width: 270px;
+  width: 290px;
   height: 600px;
   border-radius: 20px;
   overflow: hidden;
@@ -63,4 +63,13 @@ section#login > div#img{
 section#login > div#form{
   display: block;
   padding: 15px;
+}
+
+div#form > h1{
+  text-align: center;
+  margin: 10px;
+}
+
+div#forgot > a{
+  font-size: 0.8em;
 }

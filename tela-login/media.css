@@ -15,7 +15,7 @@ tablet 768 até 1023px
 desktop 1024 até 1280px
 telas grandes acima de 1281px
 */
-@media screen and (min-width: 768px) and (max-width: 992px)   {
+@media screen and (min-width: 768px)  {
 
   body{
     background-image: linear-gradient(to top, var(--cor4), var(--cor3), var(--cor1));
@@ -39,6 +39,11 @@ telas grandes acima de 1281px
     }
     div#form > h1{
       text-align: center;
+      font-size: 1.6em;
+    }
+
+    div#forgot > a{
+      font-size: 1em;
     }
 
 }
@@ -55,7 +60,7 @@ telas grandes acima de 1281px
   }
   
   section#login > div#img{
-    float: left;
+    float: right;
     width: 50%;
     height: 100%;
     background-position: center ;
@@ -63,13 +68,17 @@ telas grandes acima de 1281px
   
 
   section#login > div#form{
-    float: right;
+    float: left;
     width: 50%;
   }
   div#form > h1{
+    font-size: 2em;
     text-align: center;
   }
   
+  div#forgot > a{
+    font-size: 1em;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -95,6 +104,11 @@ telas grandes acima de 1281px
     width: 50%;
   }
   div#form > h1{
+    font-size: 2em;
     text-align: center;
+  }
+
+  div#forgot > a{
+    font-size: 1em;
   }
 }

@@ -7,6 +7,7 @@
   <title>Login</title>
   <link rel="stylesheet" href="login.css">
   <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
  <main class="container">
@@ -15,23 +16,29 @@
       </div>
       <div id="form">
           <h1>Login</h1> <!--se necessario por uma frase-->
-            <form action="login.js" method="post" >
-     <!--aqui vai email -->
-
-
-    <!--aqui vai senha-->
-
-
-
-
-
-              <div class="forgot"> <!--abaixou é esqueceu sua senha-->
-                <a href="#">Esqueceu a Senha ?</a>
-                <!-- abaixo botão login-->
-
-                <!--abaixo nao possui uma conta registre-se-->
+            <form action="login.js" method="post"   autocomplete="on" >
+              <div class="campo"> <!--email-->
+                <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="login" id="ilogin" required placeholder="Digite Seu Email"  autocomplete="email" maxlength="40" >
+                    <label for="ilogin">Login</label>
               </div>
+              <div class="campo"> <!--senha-->
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name="senha" id="isenha"  required placeholder="Digite sua Senha"  autocomplete="current-password" minlength="8" maxlength="20" >
+                <label for="isenha">Senha</label>
+              </div>
+
+
+
+              <div id="forgot"> <!--abaixou é esqueceu sua senha-->
+                <a href="#">Esqueceu a Senha ?</a>
+              </div>
+               <Button type="submit" id="btn" >Login</Button> 
             </form>
+            <div id="esqueceu">
+              <p>Não possui conta? <a href="#">Resgistre-se</a></p>
+            </div>
+
       </div>
     </section>
  </main>
