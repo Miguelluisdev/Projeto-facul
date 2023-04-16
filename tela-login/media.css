@@ -14,7 +14,7 @@ celular 767px
 tablet 768 até 1023px
 desktop 1024 até 1280px
 telas grandes acima de 1281px
-*/
+*/    /*abaixou config tablet*/
 @media screen and (min-width: 768px)  {
 
   body{
@@ -23,6 +23,7 @@ telas grandes acima de 1281px
 
     section#login{
       width: 80vw;
+      height: 60vh;
     }
 
     section#login > div#img{
@@ -47,7 +48,7 @@ telas grandes acima de 1281px
     }
 
 }
-
+/*abaixou config desktop*/
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
  
   body{
@@ -80,7 +81,7 @@ telas grandes acima de 1281px
     font-size: 1em;
   }
 }
-
+/*abaixou config telas grandes*/
 @media screen and (min-width: 1440px) {
   body{
     background-image: linear-gradient(to top, var(--cor4), var(--cor3), var(--cor1));
