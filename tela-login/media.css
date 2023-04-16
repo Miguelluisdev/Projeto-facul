@@ -92,7 +92,7 @@ telas grandes acima de 1281px
   }
   
   section#login > div#img{
-    float: left;
+    float: right;
     width: 50%;
     height: 100%;
     background-position: center ;
@@ -100,7 +100,7 @@ telas grandes acima de 1281px
   
 
   section#login > div#form{
-    float: right;
+    float: left;
     width: 50%;
   }
   div#form > h1{
