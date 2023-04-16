@@ -44,7 +44,7 @@ html,body{
 section#login{
   background-color: var(--cor5);
   width: 290px;
-  height: 600px;
+  height: 590px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.455);
@@ -68,8 +68,86 @@ section#login > div#form{
 div#form > h1{
   text-align: center;
   margin: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29);
 }
 
 div#forgot > a{
   font-size: 0.8em;
+}
+
+form > div.campo{
+  background-color: var(--cor3);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+form > div.campo > input{
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  outline: none;
+
+}
+
+
+div.campo > label{
+  display: none;
+}
+
+div#forgot{
+ margin: 15px 0 15px;
+}
+div#forgot > a{
+  text-decoration: none;
+ font-weight: bold;
+}
+
+div#forgot > a:hover{
+  color: #585F73;
+ text-decoration: underline;
+}
+
+form > #btn{
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: var(--cor4);
+  color: #F2F2F2;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.195);
+}
+
+form > #btn:hover{
+  background-color: var(--cor1);
+  color: black;
+}
+
+#conta{
+  text-align: center;
+  font-size: 14px;
+  margin: 25px 0;
+}
+
+#conta > p{
+  color: var(--cor4);
+}
+#conta > p > a{
+  color: var(--cor3);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#conta > p > a:hover{
+  text-decoration: underline;
 }
