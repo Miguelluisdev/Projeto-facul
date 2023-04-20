@@ -1,6 +1,6 @@
 @charset "UTF-8";
-
-/*mobile first*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* sem mobile first*/
 :root{
   --cor1: #BBC8F2;
   --cor2: #939EBF;
@@ -14,46 +14,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 font-family: 'Ubuntu', sans-serif;*/
 /*reset*/
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
-
 }
 
 html,body{
   width: 100vw;
   height: 100vh;
-  background-color:var(--cor4) ;
-}
-/*usei display flex mais pode ser com position relative no main e absolute na section top e left 50%   e despopis usar transform translate -50% doss dos ladops para por ao centro */
-
-.container{
-  width: 100vw;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(to top, var(--cor2), var(--cor3), var(--cor4) );
 }
 
-section#cadastro{
-  background-color: var(--cor5);
-  width: 390px;
-  height: 590px;
-  padding: 10px;
+
+.container{
+  width: 60%;
+  height: 60%;
+  padding: 28px;
+  margin: 0 28px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.455);
+  background-color: #f2f2f2c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.266);
 }
 
-section#cadastro > div#form{
-  display: block;
-  padding: 10px;
+h1{
+  text-align: left;
+  font-size: 2em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--cor4);
 }
 
-div#form h1{
-  text-align: center;
-  margin: 10px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.503);
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
 }
+
+.campo{
+  display: flex;
+ flex-wrap: wrap;
+  width: 50%;
+ padding-bottom: 20px;
+}
+
+/*continuar amanhã estilizar os inputs depois o button o texto por mediaq e cabou*/

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Cadastro</title>
   <link rel="stylesheet" href="cadastro.css">
   <link rel="stylesheet" href="mediaQ.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,28 +13,76 @@
 <main class="container">
     <section id="cadastro">
       <div id="form">
-        <form action="cadastro.js" method="post">
+        <form action="cadastro.js" method="post" autocomplete="on"  >
               <h1>Cadastro</h1>
-              <p>Seja Bem Vindo(a) faça seu cadastro para entrar no site  </p>
 <!--nome-->
+                <div class="content">
+                  <div class="campo">
+                    <label for="inome">Nome Completo </label>
+                    <input type="text" name="nome" id="inome"  minlength="15" maxlength="60" placeholder="Digite seu Nome" required  >
+                  </div>
+                  
+                  <!--email-->
+                      <div class="campo">
+                        <label for="iemail">Email:</label>
+                        <input type="email" name="email" id="iemail"  placeholder="Digite seu email" required >
+                      </div>
+                                        
+                  
+                  <!--data de nascimento-->
+                      <div class="campo">
+                        <label for="idata">Data de nascimento:</label>
+                        <input type="date" name="daata" id="idata" required  >
+                      </div>  
+                  
+                  <!--celular-->
+                      <div class="campo">
+                        <label for="itel">Telefone Celular</label>
+                        <input type="tel" name="tel" id="itel" placeholder="(+55)xx-xxxx-xxxx" required >
+                      </div>
+                  
+                  <!--endereço completo-->
+                      <div class="campo">
+                        <label for="ien">Endereço Completo</label>
+                        <input type="text" name="en" id="ien" placeholder="endereço completo" required  >
+                      </div>
+                  
+                  
+                  <!--CPF-->
+                      <div class="campo">
+                        <label for="icpf">CPF:</label>
+                        <input type="text" name="cpf" id="icpf"  placeholder="Digite seu CPF" required >
+                      </div>
+                  
+                  <!--senha e confirmar senha-->
+                      <div class="campo">
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" minlength="8" placeholder="Digite sua Senha" required >
+                      </div>
+                    <div class="campo">
+                      <label for="iconfirm">Confirmar Senha</label>
+                      <input type="password" name="confmr" id="iconfirm" minlength="8" placeholder="Confirme a Senha" required >
+                    </div>
+                  
+                  <!--genero-->
+                    <span class="gen-title">Genero</span>
+                  <div class="genero">
+                    <input type="radio" name="gender" id="masculino"  >
+                    <label for="masculino">Masculino</label>
+                  
+                    <input type="radio" name="gender" id="feminino" >
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" name="gender" id="outros" >
+                    <label for="outros">Outros</label>
+                  </div>
+                  
+                </div>
 
-<!--sobrenome-->
-
-<!--data de nascimento-->
-
-<!--email-->
-
-
-<!--CPF-->
-
-
+                <div class="text">
+                  <p>Seja Bem Vindo(a)</p>
+                </div>
 
           <button type="submit" id="btn" >Resgistre-se</button>
-
-          <div id="partes">
-            <p>Continue seu cadastro <a href="#">Aqui</a></p>
-          </div>
-
 
         </form>
       </div>
