@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/*mobile first*/
+:root{
+  --cor1: #BBC8F2;
+  --cor2: #939EBF;
+  --cor3: #585F73;
+  --cor4: #313540;
+  --cor5: #F2F2F2;
+}
+
+
+/*fontes:
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+font-family: 'Ubuntu', sans-serif;*/
+/*reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+html,body{
+  width: 100vw;
+  height: 100vh;
+  background-color:var(--cor4) ;
+}
+/*usei display flex mais pode ser com position relative no main e absolute na section top e left 50%   e despopis usar transform translate -50% doss dos ladops para por ao centro */
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section#cadastro{
+  background-color: var(--cor5);
+  width: 390px;
+  height: 590px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.455);
+}
+
+section#cadastro > div#form{
+  display: block;
+  padding: 10px;
+}
+
+div#form h1{
+  text-align: center;
+  margin: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.503);
+}
