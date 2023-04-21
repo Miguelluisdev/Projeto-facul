@@ -34,12 +34,12 @@ html,body{
 
 .container{
   width: 60%;
-  height: 60%;
+  height: 90%;
   padding: 28px;
   margin: 0 28px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #f2f2f2c1;
+  background-color: #f2f2f26a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +64,124 @@ h1{
   display: flex;
  flex-wrap: wrap;
   width: 50%;
- padding-bottom: 20px;
+ padding-bottom: 25px;
+} 
+
+.campo:nth-child(2n){
+  justify-content: end;
 }
 
-/*continuar amanhã estilizar os inputs depois o button o texto por mediaq e cabou*/
+.campo label, .gen-title{
+  width:95%;
+  font-weight: 600;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.gen-title{
+  font-size: 1em;
+}
+
+.campo input{
+  height: 40px;
+  width: 95%;
+  border-radius: 5px;
+  padding: 0 15px;
+  border: none;
+  outline: none;
+}
+
+.genero {
+  padding: 0 20px 0 10px ;
+  font-size: 1.1em;
+}
+
+.genero label, .genero input{
+  cursor: pointer;
+}
+
+.text{
+  font-size: 1.2em;
+  margin: 5px 0;
+  padding:5px;
+}
+.text:hover{
+  color: var(--cor3);
+}
+
+#btn{
+ width: 100%;
+ margin: 10px;
+ padding: 20px;
+ display: block;
+ border: none;
+ background: linear-gradient(to right, var(--cor2), var(--cor3), var(--cor4)  );
+ color: #F2F2F2;
+ border-radius: 10px;
+ font-size: 1.3em;
+ cursor: pointer;
+ transition: 0.3s;
+}
+
+#btn:hover{
+  background: linear-gradient(to right, var(--cor4), var(--cor3), var(--cor2));
+  color: var(--cor5);
+}
+
+@media (max-width: 600px){
+  .container{
+    min-width: 280px;
+  }
+  .content{
+    max-height: 380px;
+    overflow: auto;
+  }
+  .campo{
+    margin-bottom: 12px;
+    width: 100%;
+  }
+.campo:nth-child(2n){
+  justify-content: space-between;
+}
+.genero{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 10px;
+}
+
+.content::-webkit-scrollbar{
+  width: 0;
+}
+
+}
+
+@media (max-width: 530px){
+  .container{
+    width: 490px;
+    height: 590px;
+  }
+}
+
+/*não consigo resolver está merda só vai até 362 depois quebra*/
+@media (max-width: 362px){
+  .container{
+    width: 590px;
+    height: 590px;
+  }
+
+  .content{
+    height: 90%;
+    width: 100%;
+    overflow: auto;
+    padding: 10px;
+    margin: 6px;
+  }
+
+  #btn{
+    width:90% ;
+  }
+
+  h1{
+    font-size: 1.2em;
+  }
+}
