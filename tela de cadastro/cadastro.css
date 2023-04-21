@@ -129,7 +129,7 @@ h1{
 
 @media (max-width: 600px){
   .container{
-    min-width: 280px;
+    min-width: 380px;
   }
   .content{
     max-height: 380px;
