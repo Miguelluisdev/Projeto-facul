@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 /* sem mobile first*/
 :root{
-  --cor1: #BBC8F2;
-  --cor2: #939EBF;
-  --cor3: #585F73;
-  --cor4: #313540;
-  --cor5: #F2F2F2;
+  --cor1: #242840;
+  --cor2: #2573D9;
+  --cor3: #3264A6;
+  --cor4:#2A558C ;
+  --cor5: #F2C849;
 }
 
 
@@ -15,166 +15,133 @@
 font-family: 'Ubuntu', sans-serif;*/
 /*reset*/
 
-*{
+*{ /*reset*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
 }
-
-html,body{
-  width: 100vw;
-  height: 100vh;
+/*configurei body */
+body{
   display: flex;
+  height: 100vh;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to top, var(--cor2), var(--cor3), var(--cor4) );
+  background: url(../img/imgfundo.jpg);
+  background-size: cover;
+  background-position: center center;
 }
-
-
+/*configurei o conteudo global*/
 .container{
-  width: 60%;
-  height: 90%;
+  width: 100%;
+  max-width: 650px;
+  background-color: #24284094;
   padding: 28px;
   margin: 0 28px;
   border-radius: 10px;
-  overflow: hidden;
-  background-color: #f2f2f2be;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.266);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.404);
 }
-
+/*titulo principal*/
 h1{
-  text-align: left;
-  font-size: 2em;
+  font-size: 1.9em;
+  font-weight: 600;
+  text-align: center;
   padding-bottom: 10px;
-  border-bottom: 2px solid var(--cor4);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.232);
+  border-bottom: solid 1px white;
+  color: white;
 }
 
+/*div das input*/
 .content{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px 0 ;
 }
-
-.campo{
-  display: flex;
- flex-wrap: wrap;
-  width: 50%;
- padding-bottom: 25px;
-} 
-
-.campo:nth-child(2n){
+/*as inputs configuradas*/
+.caixa:nth-child(2n){
   justify-content: end;
 }
 
-.campo label, .gen-title{
-  width:95%;
-  font-weight: 600;
-  margin: 5px 0;
-  cursor: pointer;
-}
-.gen-title{
-  font-size: 1em;
-}
-
-.campo input{
-  height: 40px;
-  width: 95%;
-  border-radius: 5px;
-  padding: 0 15px;
-  border: none;
-  outline: none;
-}
-
-.genero {
-  padding: 0 20px 0 10px ;
-  font-size: 1.1em;
-}
-
-.genero label, .genero input{
-  cursor: pointer;
-}
-
-.text{
-  font-size: 1.2em;
-  margin: 5px 0;
-  padding:5px;
-}
-.text:hover{
-  color: var(--cor3);
-}
-
-#btn{
- width: 100%;
- margin: 10px;
- padding: 20px;
- display: block;
- border: none;
- background: linear-gradient(to right, var(--cor2), var(--cor3), var(--cor4)  );
- color: #F2F2F2;
- border-radius: 10px;
- font-size: 1.3em;
- cursor: pointer;
- transition: 0.3s;
-}
-
-#btn:hover{
-  background: linear-gradient(to right, var(--cor4), var(--cor3), var(--cor2));
-  color: var(--cor5);
-}
-
-@media (max-width: 600px){
-  .container{ /*min-width*/
-   min-width: 380px;
-  }
-  .content{ /*max-height*/
-  max-height: 380px;
-  }
-  .campo{
-    margin-bottom: 12px;
-    width: 100%;
-  }
-.campo:nth-child(2n){
-  justify-content: space-between;
-}
-.genero{
+.caixa{
   display: flex;
-  justify-content: space-between;
-  width: 60%;
-  margin: 10px;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
 }
 
-.content::-webkit-scrollbar{
-  width: 0;
+.caixa label{
+  width: 95%;
+  color: white;
+  font-weight: 400;
+  margin: 5px 0;
 }
 
+.caixa input{
+  height: 30px;
+  width: 95%;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.305);
+  padding: 0 10px;
+}
+/*configurei genero*/
+.gen-title{
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+}
+.categoria{
+  color: white;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.categoria label{
+  padding: 0 20px 0 5px;
+  cursor: pointer;
 }
 
+.form-btn{
+  margin-top: 30px;
+}
 
-/*não consigo resolver está merda só vai até 362 depois quebra*/
-@media (max-width: 362px){
+.form-btn input {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.4m;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3),var(--cor4));
+}
+
+.form-btn input:hover{
+  color: #F2C849;
+  background: linear-gradient(to right, var(--cor4), var(--cor3), var(--cor2), var(--cor1));
+}
+/*media 413px*/
+  @media (max-width: 600px){
   .container{
-    width: 590px;
-    height: 590px;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+  }
+  .caixa{
+    margin-bottom: 12px;
+    width: 50%;
+  }
+  .caixa:nth-child(2n){
+    justify-content: space-between;
   }
 
-  .content{
-    height: 90%;
-    width: 100%;
-    overflow: auto;
-    padding: 10px;
-    margin: 6px;
+  .categoria{
+    width: 50%;
   }
 
-  #btn{
-    width:90% ;
-  }
 
-  h1{
-    font-size: 1.2em;
-  }
 }
