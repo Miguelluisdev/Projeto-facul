@@ -128,12 +128,11 @@ h1{
 }
 
 @media (max-width: 600px){
-  .container{
-    min-width: 380px;
+  .container{ /*min-width*/
+   min-width: 380px;
   }
-  .content{
-    max-height: 380px;
-    overflow: auto;
+  .content{ /*max-height*/
+  max-height: 380px;
   }
   .campo{
     margin-bottom: 12px;
@@ -155,12 +154,6 @@ h1{
 
 }
 
-@media (max-width: 530px){
-  .container{
-    width: 490px;
-    height: 590px;
-  }
-}
 
 /*não consigo resolver está merda só vai até 362 depois quebra*/
 @media (max-width: 362px){
