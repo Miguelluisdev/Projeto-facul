@@ -1,13 +1,20 @@
 @charset "UTF-8";
 
 :root{
-  --cor1: #BBC8F2;
+  --cor1: #3264A6;
   --cor2: #939EBF;
-  --cor3: #585F73;
-  --cor4: #313540;
+  --cor3: #2573D9;
+  --cor4: #242840;
   --cor5: #F2F2F2;
 }
 
+/*:root{
+  --cor1: #242840;
+  --cor2: #2573D9;
+  --cor3: #3264A6;
+  --cor4:#2A558C ;
+  --cor5: #F2C849;
+}*/
 
 /*device breakpoins
 celular 767px

@@ -15,10 +15,17 @@ font-family: 'Ubuntu', sans-serif;
 :root{
   --cor1: #BBC8F2;
   --cor2: #939EBF;
-  --cor3: #585F73;
-  --cor4: #313540;
+  --cor3: #2A558C;
+  --cor4: #242840;
   --cor5: #F2F2F2;
 }
+
+/* --cor1: #242840;
+  --cor2: #2573D9;
+  --cor3: #3264A6;
+  --cor4:#2A558C ;
+  --cor5: #F2C849;*/
+
 /*reset padrao*/
 *{
   margin: 0;
@@ -76,7 +83,7 @@ div#forgot > a{
 }
 
 form > div.campo{
-  background-color: var(--cor3);
+  background-color: var(--cor4);
   width: 100%;
   height: 40px;
   display: flex;
@@ -113,7 +120,7 @@ div#forgot > a{
 }
 
 div#forgot > a:hover{
-  color: #585F73;
+  color: #2573D9;
  text-decoration: underline;
 }
 
@@ -132,8 +139,8 @@ form > #btn{
 }
 
 form > #btn:hover{
-  background-color: var(--cor1);
-  color: black;
+  background: linear-gradient(to right, var(--cor3), var(--cor4));
+  color: #F2C849;
 }
 
 #conta{
