@@ -284,10 +284,38 @@ img{
   color: white;
 }
 /*aside*/
+.container .segu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid var(--cor1);
+}
 
+.segu{
+  border: 1px solid transparent;
+}
 
-
-
+.segu .text3{
+  width: 30%;
+  border-radius: 10px;
+  text-indent: 1;
+  margin: 10px;
+  border: 1px solid transparent;
+}
+.btn-segu{
+  background-color: var(--cor1);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  border: none;
+}
+.btn-segu:hover{
+  background: linear-gradient(to right, var(--cor5), var(--cor3), var(--cor4));
+}
 /*aside 2*/
 /*media q conteudo principal*/
 @media (max-width: 840px){
