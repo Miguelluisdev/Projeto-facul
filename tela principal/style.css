@@ -284,6 +284,9 @@ img{
   color: white;
 }
 /*aside*/
+.img3{
+  width: 400px;
+}
 .container .segu{
   display: flex;
   justify-content: center;
@@ -298,7 +301,6 @@ img{
 
 .segu .text3{
   width: 30%;
-  border-radius: 10px;
   text-indent: 1;
   margin: 10px;
   border: 1px solid transparent;
@@ -357,6 +359,23 @@ img{
   }
   .deploy .card-item{
     width: 80%;
+  }
+  .container .segu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .img3{
+    width: 280px;
+  }
+  .container .text3{
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0 20px;
+    border: 1px solid transparent;
+    width: 100%;
+    text-indent: 10px;
   }
 }
 @media (max-width: 417px){
