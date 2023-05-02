@@ -8,4 +8,4 @@ function menuClick(){
   }
 }
 
-window.alert(" se estiver no celular, para fechar o menu recarregue a página")
+/* window.alert(" se estiver no celular, para fechar o menu recarregue a página")*/
