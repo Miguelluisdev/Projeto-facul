@@ -397,6 +397,29 @@ img{
   font-weight: lighter;
   padding: 1.5rem;
 }
+.anim{
+  background-color: white;
+  width: 28px;
+  height: 6px;
+  margin: 2px;
+  border-radius: 40px;
+  position: relative;
+  left: -200px;
+  animation: animate 3s linear infinite;
+}
+@keyframes animate {
+  0%{
+    left: 560px;
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    left:990px;
+    opacity: 0;
+  }
+}
 .rodape span{
   color: var(--cor5);
 }
