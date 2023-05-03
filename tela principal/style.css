@@ -340,6 +340,7 @@ img{
   font-family: var(--secon-font);
   background-image: linear-gradient(to right, var(--cor2), var(--cor5), var(--cor4));
   text-align: center;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.205);
 }
 .container .vant ul{
   font-size: 1.3em;
@@ -351,6 +352,54 @@ img{
   font-weight: 600;
 }
 
+/*footer*/
+.rodape{
+  background-color: var(--cor1);
+  text-align: center;
+}
+.rodape .icons{
+  padding: 1rem 0;
+}
+.rodape .icons a{
+  height: 3rem;
+  width: 4rem;
+  line-height: 3rem;
+  font-size: 2rem;
+  color: white;
+  border: 1px solid var(--cor5);
+  margin: 1rem;
+  border-radius: 50%;
+}
+.rodape .icons a:hover{
+  background-color: var(--cor4);
+}
+.rodape .links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+.rodape .links a{
+  color:white;
+  padding: .4rem .2rem;
+  border: 1px solid var(--cor5);
+  font-size: 1.2em;
+  border-radius: 10px;
+}
+.rodape .links a:hover{
+  background-color: var(--cor3) ;
+}
+.rodape .text5{
+  font-size: 1.3em;
+  color: white;
+  font-weight: lighter;
+  padding: 1.5rem;
+}
+.rodape span{
+  color: var(--cor5);
+}
 /*media q conteudo principal*/
 @media (max-width: 840px){
   .container .home{
