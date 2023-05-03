@@ -351,19 +351,6 @@ img{
   font-weight: 600;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*media q conteudo principal*/
 @media (max-width: 840px){
   .container .home{
@@ -474,3 +461,5 @@ img{
     justify-content: space-between;
   }
 }
+
+/*media query footer*/
