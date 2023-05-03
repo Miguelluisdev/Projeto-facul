@@ -318,7 +318,52 @@ img{
 .btn-segu:hover{
   background: linear-gradient(to right, var(--cor5), var(--cor3), var(--cor4));
 }
-/*aside 2*/
+/*section 4*/
+.container .vant{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/sec-4.jpg);
+  background-size: cover;
+  background-position: center ;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 20px;
+  color:white;
+}
+
+.container .vant text4{
+  border: 1px solid transparent;
+}
+.container .vant h1{
+  font-size: 2em;
+  font-family: var(--secon-font);
+  background-image: linear-gradient(to right, var(--cor2), var(--cor5), var(--cor4));
+  text-align: center;
+}
+.container .vant ul{
+  font-size: 1.3em;
+  width: 90%;
+  border-radius: 10px;
+  text-indent: 1;
+  margin: 10px;
+  list-style: none;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*media q conteudo principal*/
 @media (max-width: 840px){
   .container .home{
@@ -376,6 +421,11 @@ img{
     border: 1px solid transparent;
     width: 100%;
     text-indent: 10px;
+  }
+  .container .vant{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 417px){
