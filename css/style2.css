@@ -11,4 +11,76 @@
   --cor5: #F2C849;
   --font-main:'Open Sans', sans-serif;
   --secon-font:'Roboto', sans-serif;
+  --border: 1px solid var(--cor5) ;
+}
+*{
+  font-family: var(--secon-font);
+  margin: 0; padding: 0; 
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+  background: white;
+  border-radius: 5rem;
+}
+
+/*body config*/
+body{
+  background-color: var(--cor1);
+}
+/*header config*/
+.header{
+  background-color: var(--cor1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  border-bottom: var(--border);
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+}
+
+.header .logo img {
+  height: 6rem;
+}
+
+.header .navbar a{
+  margin: 0 1rem;
+  font-size: 1.6em;
+  color: white;
+}
+.header .navbar a:hover{
+  color: var(--cor2);
+  border-bottom: var(--border);
+  padding-bottom: .5rem;
+}
+
+.header .icons span{
+  color: white;
+  cursor: pointer;
+  font-size: 2em;
+  margin-left: 2rem;
+}
+
+.header .icons span:hover{
+  color: #2573D9;
+}
+
+#menu-bar{
+  display: none;
 }
