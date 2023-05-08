@@ -23,10 +23,14 @@
   outline: none;
 }
 /*body config*/
-body{
-  background-color: var(--cor4);
-  width: 99vw;
+html,body{
+ /* background-color: var(--cor4);*/
+  width: 100vw;
   height: 100vh;
+}
+
+body::-webkit-scrollbar{
+  width: 0;
 }
 
 img{
@@ -35,7 +39,7 @@ img{
 /*menu de icones*/
 .main-icons .icon-bar {
   width: 100%;
-  height:50%;
+  height:40%;
   background-color: #242840;
   color: white;
   display: flex;
@@ -64,11 +68,11 @@ img{
 }
 /*header config*/
 .header{
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
   background-image: url(../img/tav.jpg);
-  background-position: center center;
+  background-position: center ;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -319,17 +323,15 @@ img{
   background: linear-gradient(to right, var(--cor5), var(--cor3), var(--cor4));
 }
 /*section 4*/
-.container .vant{
+/*.container .vant{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(../img/sec-4.jpg);
-  background-size: cover;
-  background-position: center ;
-  background-attachment: fixed;
+  background: linear-gradient(to right, var(--cor4), var(--cor1), var(--cor2));
   width: 100%;
   padding: 20px;
   color:white;
+  border-bottom: 1px solid var(--cor5);
 }
 
 .container .vant text4{
@@ -351,7 +353,7 @@ img{
   list-style: none;
   font-weight: 600;
 }
-
+*/
 /*footer*/
 .rodape{
   background-color: var(--cor1);
@@ -425,6 +427,13 @@ img{
 }
 /*media q conteudo principal*/
 @media (max-width: 840px){
+  .header{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: linear-gradient(to top, var(--cor3), var(--cor4), var(--cor5));
+    text-align: center;
+  }
   .container .home{
     display: flex;
     flex-direction: column;
@@ -481,12 +490,16 @@ img{
     width: 100%;
     text-indent: 10px;
   }
-  .container .vant{
+  
+}
+
+/* .container .vant{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  }
-}
+    background: linear-gradient(to top, var(--cor1), var(--cor3), var(--cor5));
+  }*/
+
 @media (max-width: 417px){
   .deploy .card-item{
     width: 90%;
@@ -497,7 +510,7 @@ img{
 
 @media (max-width: 539px){
   .navbar ul{
-    background-color: #2a548c;
+    background-color: var(--cor1);
     position: absolute;
     top: 175px;
     left:-100%;
@@ -533,5 +546,3 @@ img{
     justify-content: space-between;
   }
 }
-
-/*media query footer*/
