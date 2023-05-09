@@ -84,3 +84,35 @@ body{
 #menu-bar{
   display: none;
 }
+
+/*media query*/
+@media (max-width: 991px){
+  html{
+    font-size: 55%;
+  }
+  .header{
+    padding: 1.5rem 2rem;
+  }
+}
+@media (max-width: 991px){
+  #menu-bar{
+    display: block;
+  }
+  .header .navbar{
+    position: absolute;
+    top: 100%; right: -100%;
+    background-color: white;
+    width: 30rem; 
+    height: calc(100vh - 9.5rem);
+  }
+  .header .navbar.open{
+    right: 0;
+  }
+  .header .navbar a { 
+    color: black;
+    display: block;
+    margin: 1.5rem;
+    padding: .5rem;
+    font-size: 2em;
+  }
+}
