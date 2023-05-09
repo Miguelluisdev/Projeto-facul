@@ -44,7 +44,7 @@ body{
 }
 /*header config*/
 .header{
-  background-color: var(--cor1);
+ background: linear-gradient(to right, var(--cor5),var(--cor2), var(--cor3));
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -65,7 +65,7 @@ body{
   color: white;
 }
 .header .navbar a:hover{
-  color: var(--cor2);
+  color: var(--cor1);
   border-bottom: var(--border);
   padding-bottom: .5rem;
 }
@@ -78,12 +78,95 @@ body{
 }
 
 .header .icons span:hover{
-  color: #2573D9;
+  color: var(--cor1);
 }
 
 #menu-bar{
   display: none;
 }
+/*conteudo principal*/
+.home{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../img/workspace-g190edaf78_1280.jpg) no-repeat ;
+  background-size: cover;
+  background-position: center;
+}
+section{
+  padding: 2rem 7%;
+}
+.home div h2{
+  font-family: var(--font-main);
+  font-size: 2.3em;
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.31);
+}
+.home div strong{
+  color: #F2C849;
+}
+.home div strong:hover{
+  color: var(--cor1);
+}
+.home div p{
+  border: 1px solid transparent;
+  width: 50%;
+  color: white;
+  font-size: 1.7em;
+  text-indent: 10px;
+  line-height: 23px;
+  margin-left: 20px;
+}
+.Btn{
+  background-color: var(--cor5);
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  border: none;
+  transition: 0.5s;
+  animation: btn 1s ease-in-out infinite;
+  margin-left: 20px;
+  font-size: 2em;
+}
+.Btn:hover{
+  background-color: var(--cor3);
+}
+
+/*animaçao btn */
+@keyframes btn {
+  from{
+    outline: 0px solid var(--cor2);
+  }
+  to{
+    outline: 5px solid var(--cor4);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*fim conetdo principal*/
 
 /*media query*/
 @media (max-width: 991px){
@@ -114,5 +197,23 @@ body{
     margin: 1.5rem;
     padding: .5rem;
     font-size: 2em;
+  }
+}
+
+@media (max-width: 768px){
+  html{
+    font-size: 67%;
+  }
+  .header{
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 450px){
+  html{
+    font-size: 50%;
+  }
+  .header{
+    padding: 1.5rem 2rem;
   }
 }
