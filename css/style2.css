@@ -93,31 +93,37 @@ body{
   background-size: cover;
   background-position: center;
 }
+
+
 section{
   padding: 2rem 7%;
 }
+
+
 .home div h2{
   font-family: var(--font-main);
-  font-size: 2.3em;
+  font-size: 4em;
   color: white;
   margin-bottom: 10px;
   margin-left: 20px;
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.31);
+
 }
 .home div strong{
-  color: #F2C849;
+  color: var(--cor5);
 }
 .home div strong:hover{
-  color: var(--cor1);
+  color: var(--cor2);
 }
 .home div p{
   border: 1px solid transparent;
   width: 50%;
   color: white;
-  font-size: 1.7em;
+  font-size: 2em;
   text-indent: 10px;
-  line-height: 23px;
+  line-height:1.8;
   margin-left: 20px;
+  width: 100%;
 }
 .Btn{
   background-color: var(--cor5);
@@ -176,6 +182,19 @@ section{
   .header{
     padding: 1.5rem 2rem;
   }
+  section{
+    padding: 2rem 7%;
+  }
+  .home .content{
+    max-width: 60rem;
+   margin: 0 auto;
+  }
+  .home div h2{
+    font-size: 6em;
+  }
+  .home div p{
+    font-size: 3em;
+  }
 }
 @media (max-width: 991px){
   #menu-bar{
@@ -202,10 +221,21 @@ section{
 
 @media (max-width: 768px){
   html{
-    font-size: 67%;
+    font-size: 63%;
   }
   .header{
     padding: 1.5rem 2rem;
+  }
+  .home .content{
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+  .home div h2{
+    margin-top: 10px;
+    font-size: 5rem;
+  }
+  .home div p{
+    font-size: 2.8rem;
   }
 }
 
