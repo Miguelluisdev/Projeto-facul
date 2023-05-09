@@ -226,13 +226,18 @@ section{
   .header{
     padding: 1.5rem 2rem;
   }
+  .home{
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+  }
   .home .content{
     max-width: 20rem;
     margin: 0 auto;
   }
   .home div h2{
     margin-top: 10px;
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   .home div p{
     font-size: 2.8rem;
