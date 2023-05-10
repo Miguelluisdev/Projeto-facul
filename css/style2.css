@@ -152,17 +152,138 @@ section{
   }
 }
 
+.heading{
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  padding-bottom: 3.5rem;
+  font-size: 2.79rem;
+}
+.heading span{
+  color: var(--cor5);
+}
+
+.sobre .row{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: #2A558C;
+}
+.sobre .row .img{
+  flex: 1 1 45rem;
+}
+.sobre .row .img img{
+  width: 100%;
+}
+
+.sobre .row .content{
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.sobre .row .content h2{
+  font-size: 3rem;
+  color: white;
+}
+.sobre .row .content p{
+  font-size: 1.5rem;
+  color: #ccc;
+  padding: 1rem 0;
+  line-height: 1.8;
+  text-indent: 10px;
+}
+.sobre .row .content strong{
+  color: #242840;
+}
+.sobre .row .content strong:hover{
+  color: var(--cor5);
+}
 
 
+.heading2{
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  padding-bottom: 3.5rem;
+  font-size: 2.79rem;
+}
+.heading2 span{
+  color: var(--cor5);
+}
+
+.sobre2 .row2{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: #2A558C;
+}
+
+.sobre2 .row2 .img2{
+  flex: 1 1 45rem;
+}
+.sobre2 .row2 .img2 img{
+  width: 100%;
+}
+
+.sobre2 .row2 .content2{
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.sobre2 .row2 h2{
+  font-size: 3rem;
+  color: white;
+}
+.sobre2 .row2 .content2 p{
+  font-size: 1.5rem;
+  color: #ccc;
+  padding: 1rem 0;
+  line-height: 1.8;
+  text-indent: 10px;
+}
 
 
+/* CSS */
+#btn {
+  background-color: initial;
+  background-image: linear-gradient(#8614f8 0, #760be0 100%);
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 60px;
+  line-height: 60px;
+  margin-left: -4px;
+  outline: 0;
+  text-align: center;
+  transition: all .3s cubic-bezier(.05, .03, .35, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: bottom;
+  width: 190px;
+}
 
+#btn:hover {
+  opacity: .7;
+  color: #242840;
+}
 
-
-
-
-
-
+@media screen and (max-width: 1000px) {
+  #btn {
+    font-size: 14px;
+    height: 55px;
+    line-height: 55px;
+    width: 150px;
+  }
+}
 
 
 
