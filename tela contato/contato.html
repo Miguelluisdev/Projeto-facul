@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="../css/contato.css">
+  <link rel="shortcut icon" href="../img/favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+  <main class="container">
+      <form action="contato.js" method="post" autocomplete="on"  >
+        <h1>Contato</h1>
+          <!--div Nome-->
+          <div class="content">
+
+            <div class="nome">
+              <label for="inome">Nome</label>
+              <input type="text" name="nome" id="iname"  placeholder="Digite seu nome" inputmode="latin-name" required >
+            </div>
+            <!--div email-->
+              <div class="email">
+                <label for="iemail">Email</label>
+                <input type="text" name="email" id="iemail" placeholder="Digite seu email" inputmode="email" required >
+              </div>
+              <div class="area">
+              <textarea name="nome" id="iname" cols="30" rows="10" placeholder="Digite sua mensagem" ></textarea>
+              </div>
+              <button type="submit" >Enviar</button>
+          </div>
+
+      </form>    
+  </main>
+</body>
+</html>
