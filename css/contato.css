@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');    font-family: 'Ubuntu', sans-serif; */
+/*var de cor e font*/
+:root{
+  --cor1: #242840;
+  --cor2: #2573D9;
+  --cor3: #3264A6;
+  --cor4:#2A558C ;
+  --cor5: #F2C849;
+  --font-main:'Open Sans', sans-serif;
+  --secon-font:'Roboto', sans-serif;
+  --border: 1px solid var(--cor5) ;
+}
+*{
+  font-family: var(--secon-font);
+  margin: 0; padding: 0; 
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--cor3);
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor1);
+  height: 400px;
+  width: 300px;
+  padding: 2rem 4rem;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.408);
+}
+
+.container h1{
+  color: white;
+  text-align: center;
+  font-family: var(--font-main);
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.31);
+}
+
+
