@@ -188,7 +188,7 @@ section{
 }
 .sobre .row .content p{
   font-size: 1.5rem;
-  color: #ccc;
+  color: white;
   padding: 1rem 0;
   line-height: 1.8;
   text-indent: 10px;
@@ -238,7 +238,7 @@ section{
 }
 .sobre2 .row2 .content2 p{
   font-size: 1.5rem;
-  color: #ccc;
+  color: white;
   padding: 1rem 0;
   line-height: 1.8;
   text-indent: 10px;

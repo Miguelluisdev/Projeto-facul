@@ -28,6 +28,9 @@ html{
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
 }
+body{
+  background-color: var(--cor3);
+}
 html::-webkit-scrollbar{
   width: .8rem;
 }
@@ -151,6 +154,116 @@ section{
 .btn:hover {
   background-image: linear-gradient(#B384C9, #391F5B 50%);
 }
+/*sobre2 home*/
+.heading2{
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  padding-bottom: 3.5rem;
+  font-size: 2.79rem;
+}
+.heading2 span{
+  color: var(--cor5);
+}
+
+.sobre2 .row2{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: #242840;
+}
+
+.sobre2 .row2 .img2{
+  flex: 1 1 45rem;
+}
+.sobre2 .row2 .img2 img{
+  width: 100%;
+}
+
+.sobre2 .row2 .content2{
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.sobre2 .row2 h2{
+  font-size: 3rem;
+  color: white;
+}
+.sobre2 .row2 .content2 p{
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem 0;
+  line-height: 1.8;
+  text-indent: 10px;
+}
+
+/*fim section*/
+/*new seciton2*/
+.heading{
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  padding-bottom: 3.5rem;
+  font-size: 2.79rem;
+}
+.heading span{
+  color: var(--cor5);
+}
+
+.sobre .row{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: #242840;
+}
+
+.sobre .row .img{
+  flex: 1 1 45rem;
+}
+.sobre .row .img img{
+  width: 100%;
+}
+
+.sobre .row .content{
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.sobre .row .content h2{
+  font-size: 3rem;
+  color: white;
+}
+.sobre .row .content p{
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem 0;
+  line-height: 1.8;
+  text-indent: 10px;
+}
+.sobre .row .content strong{
+  color: var(--cor5);
+}
+.sobre .row .content strong:hover{
+  color: var(--cor4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {
   .btn-72 {
