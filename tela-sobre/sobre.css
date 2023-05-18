@@ -248,8 +248,40 @@ section{
 .sobre .row .content strong:hover{
   color: var(--cor4);
 }
+/*fim section2*/
+/*section linha*/
+.heading3{
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  padding-bottom: 3.5rem;
+  font-size: 2.79rem;
+}
+
+.linha{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #242840;
+}
+.text-linha{
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  font-size: 2.42rem;
+}
+
+.linha .img3{
+  border: 1px solid black;
+  width: 70%;
+  height: 70%;
+}
 
 
+
+
+/*fim section 2*/
 
 
 
@@ -295,6 +327,12 @@ section{
   .home div p{
     font-size: 3em;
   }
+  .linha .img3{
+    border: 1px solid black;
+    width: 86%;
+    height: 70%;
+  }
+  
 }
 
 @media (max-width: 991px){
