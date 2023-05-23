@@ -87,7 +87,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 /*home*/
- section{
+ .home{
   padding: 2rem 9%;
  }
 
@@ -151,6 +151,65 @@ text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.482);
   color: #2A558C;
   background-color: #2573D9;
 }
+
+/*section home end*/
+
+
+/*section sobre*/
+
+
+button {
+  background-color: var(--cor5);
+  border-radius: 8px;
+  border-width: 0;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover{
+  color: black;
+ background-color: #242840;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {
   #btn{
