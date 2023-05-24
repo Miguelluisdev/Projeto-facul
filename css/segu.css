@@ -321,10 +321,37 @@ button:hover{
 }
 /*section menu fim*/
 
+/*section usos*/
+.heading3{
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  padding-bottom: 3.5rem;
+  font-size: 2.79rem;
+}
 
+.linha{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#f1cc5fc0 ;
+}
+.text-linha{
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  font-size: 2.42rem;
+}
 
+.linha .img3{
+  border: 1px solid black;
+  width: 70%;
+  height: 70%;
+}
+/*section usos fim*/
 
-
+/*section preços*/
 
 
 
