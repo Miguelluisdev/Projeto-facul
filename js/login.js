@@ -9,6 +9,7 @@ function validarFormulario() {
   }
 
   // Verificar se o formato do e-mail é válido
+  // /^[^\s@]+@[^\s@]+\.[^\s@]+$/ caracteres possiveis do usuario botar, usar isso em outros
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     alert("Por favor, digite um endereço de e-mail válido.");
