@@ -19,3 +19,4 @@ function validarFormulario() {
   // A validação foi bem-sucedida, pode enviar o formulário
   return true;
 }
+
