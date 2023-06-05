@@ -31,6 +31,25 @@ html{
 body{
   background-color: var(--cor3);
 }
+
+body.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode h1,h2,h3{
+  color: black;
+}
+
+body.dark-mode h3{
+  color: #000;
+}
+body.light-mode {
+  background-color: var(--cor3);
+  color: black;
+}
+
+
 html::-webkit-scrollbar{
   width: .8rem;
 }
