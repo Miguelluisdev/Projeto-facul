@@ -41,6 +41,24 @@ html::-webkit-scrollbar-thumb{
 /*body config*/
 body{
   background-color: var(--cor1);
+
+}
+
+body.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode h1,h2,h3{
+  color: black;
+}
+
+body.dark-mode h3{
+  color: #000;
+}
+body.light-mode {
+  background-color: var(--cor1);
+  color: black;
 }
 /*header config*/
 .header{
@@ -361,7 +379,7 @@ section{
 
 .security .box-container .box h3{
   font-size: 2.3rem;
-  color: white;
+  color: var(--cor5);
 }
 
 /* CSS */
