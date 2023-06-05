@@ -341,6 +341,11 @@ section{
   color: #000;
 }
 
+
+.saude-img{
+  mix-blend-mode: multiply;
+}
+
 /*security*/
 .security .box-container{
   display: grid;
