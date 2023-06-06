@@ -10,7 +10,7 @@
 <body>
   <main class="container"> <!--conteudo principal que engloba tudo-->
     <h1 class="titulo-principal"  >Cadastro</h1> <!--titulo principal e aqui vai acessibilidade -->
-    <form action="cadastro.js" method="post">
+    <form action="../tela-login/login.html" method="post" onsubmit="return verificarLog()"  >
         <div class="content"> <!--conteudo do form-->
           <div class="caixa"> <!--inputs e label-->
             <label for="inome">Nome Completo</label> <!--nome-->
@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="form-btn">
-          <input type="submit" value="Cadastrar"  >
+          <input type="submit" value="Cadastrar" onclick="obterValor()"  >
         </div>
     </form>
   </main>

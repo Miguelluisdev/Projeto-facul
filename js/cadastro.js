@@ -1,4 +1,4 @@
-let login = ""
+let email = ""
 let cpf = ""
 let senha = ""
 
@@ -17,11 +17,11 @@ function getUsers (){
 
 function obterValor() {
  
-     login = document.getElementById("loginL").value;
+     email = document.getElementById("iemail").value;
 
-     cpf = document.getElementById("cpf").value;
+     cpf = document.getElementById("icpf").value;
 
-     senha = document.getElementById("senhaCas").value;
+     senha = document.getElementById("iconfirm").value;
      
      const localUser = getUsers()
      
@@ -30,7 +30,7 @@ function obterValor() {
         ...localUser,
         {
         chave1: cpf ,
-        login: login,
+        email: login,
         senha: senha,
         }
 
