@@ -38,7 +38,7 @@ function validar(){
        
        if(login.value  === filteUser.login && senha.value === filteUser.senha){
            
-           window.open("../tela principal/sobre.html","_blank")
+           window.open("../tela principal/index2.html","_blank")
            
           }else{
               alert('usuario ou senha incorrect')
