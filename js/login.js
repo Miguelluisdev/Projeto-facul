@@ -1,22 +1,50 @@
-function validarFormulario() {
-  var email = document.getElementById("email").value;
-  var senha = document.getElementById("senha").value;
+function validar(){
 
-  // Verificar se os campos estão preenchidos
-  if (email.trim() === "" || senha.trim() === "") {
-    alert("Por favor, preencha todos os campos.");
-    return false;
+  let login = document.getElementById("login");
+  if(login.value == ""){
+      alert("preencha o campo login");
+      login.focus();
+      return
+  }
+  
+  let senha = document.getElementById("senha");
+  if(senha.value == ""){
+      alert("preencha o campo senha");
+      senha.focus();
+      return
   }
 
-  // Verificar se o formato do e-mail é válido
-  // /^[^\s@]+@[^\s@]+\.[^\s@]+$/ caracteres possiveis do usuario botar, usar isso em outros
-  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    alert("Por favor, digite um endereço de e-mail válido.");
-    return false;
+
+
+  function getUser(){
+      const storedStateAsJSON = localStorage.getItem(
+          '@user',
+        )
+        if (storedStateAsJSON) {
+          console.log(storedStateAsJSON)
+          return JSON.parse(storedStateAsJSON)
+        }
+        return []
   }
 
-  // A validação foi bem-sucedida, pode enviar o formulário
-  return true;
+  const usuarios = getUser()
+  
+  console.log(usuarios)
+  
+   const filteUser = usuarios.find((usuario)=>usuario.login == login.value)
+   console.log(filteUser)
+   if(filteUser) {
+
+       
+       if(login.value  === filteUser.login && senha.value === filteUser.senha){
+           
+           window.open("http://127.0.0.1:5500/tela%20principal2/index2.html","_blank")
+           
+          }else{
+              alert('usuario ou senha incorrect')
+          }
+          
+      }else{
+          alert('usuario ou senha incorrect')
+       }
 }
-
