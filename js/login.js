@@ -38,7 +38,7 @@ function validar(){
        
        if(login.value  === filteUser.login && senha.value === filteUser.senha){
            
-           window.open("http://127.0.0.1:5500/tela%20principal2/index2.html","_blank")
+           window.open("../tela-sobre/sobre.html","_blank")
            
           }else{
               alert('usuario ou senha incorrect')
