@@ -10,7 +10,7 @@
 <body>
   <main class="container"> <!--conteudo principal que engloba tudo-->
     <h1 class="titulo-principal"  >Cadastro</h1> <!--titulo principal e aqui vai acessibilidade -->
-    <form action="../tela-login/login.html" method="post" onsubmit="return verificarLog()"  >
+    <form action="../tela-login/login.html" method="get" onsubmit="return verificarLog()"  >
         <div class="content"> <!--conteudo do form-->
           <div class="caixa"> <!--inputs e label-->
             <label for="inome">Nome Completo</label> <!--nome-->
@@ -42,7 +42,7 @@
               </div>
               <div class="caixa">
                 <label for="iconfirm">Confirmar Senha</label>
-                <input type="search" name="confirm" id="iconfirm" placeholder="Confirme a senha" required  >
+                <input type="password" name="confirm" id="iconfirm" placeholder="Confirme a senha" required  >
               </div>
         </div>
         <div class="genero-detalhes">
