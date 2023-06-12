@@ -48,14 +48,23 @@ function validar(){
           alert('usuario ou senha incorrect')
        }
 
-       function showToast(message) {
-        var toast = document.getElementById("toast");
-        toast.textContent = message;
-        toast.className = "show";
+
+       function toast(frase){
+        let toast = document.getElementById("toast");
+        toast.textContent = frase.toString();
+        toast.classList.remove("hidden");
+        toast.classList.add("show");
+    
         setTimeout(function() {
-          toast.className = toast.className.replace("show", "");
-        }, 3000);
-      }
+          toast.classList.remove("show");
+          toast.classList.add("hidden");
+          toast.textContent = "Dados validos, Indo para o site..." ;
+        }, 3000); 
+    
+    }
+    
+
+      
 }
 /*
 function toast(frase){
