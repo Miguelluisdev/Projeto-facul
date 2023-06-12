@@ -47,8 +47,17 @@ function validar(){
       }else{
           alert('usuario ou senha incorrect')
        }
-}
 
+       function showToast(message) {
+        var toast = document.getElementById("toast");
+        toast.textContent = message;
+        toast.className = "show";
+        setTimeout(function() {
+          toast.className = toast.className.replace("show", "");
+        }, 3000);
+      }
+}
+/*
 function toast(frase){
     let toast = document.getElementById("toast");
     toast.textContent = frase.toString();
@@ -62,3 +71,4 @@ function toast(frase){
     }, 3000); 
 
 }
+*/
