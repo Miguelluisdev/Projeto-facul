@@ -1,2 +1,2 @@
 # Projeto-facul
- #tela principal
+ <a href="../tela principal/index2.html" > Entre aqui <\a> 
